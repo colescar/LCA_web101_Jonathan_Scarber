@@ -16,4 +16,12 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 200px);
  }
+ h2 { border-bottom: 3px solid black;
+
+ }
+
+ #skills {
+     margin: 0 200px;
+ }
+ 
  
