@@ -1,0 +1,74 @@
+header {
+    grid-area: header;
+    background-color: aqua;
+  }
+  main {
+    grid-area: main;
+    background-color: blue;
+  }
+  nav {
+    grid-area: nav;
+    background-color: red;
+  }
+  aside {
+    grid-area: aside;
+    background-color: yellow;
+  }
+  .banner {
+    grid-area: banner;
+    background-color: orange;
+  }
+  footer {
+    grid-area: footer;
+    background-color:magenta;
+  }
+  .container {
+    display: grid; /* Using the grid */
+    grid-template-areas: /* Notice how I've stacked my areas, just like they look on the page! */
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "banner"
+      "footer";
+  }
+  @media (min-width: 500px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr; /* the first column is 1 unit (fraction), the second column is 3 units */
+      grid-template-areas: /* stack the components how you want them to appear in the columns */
+        "header  header" /* stretch header across both columns at the top */
+        "nav     nav"
+        "aside   main" /* stack these horizontally, aside first, etc */
+        "banner  footer";
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+#container{
+    width: 200px;
+    height:200px;
+    background-color: lightgray;
+    border-radius: 4px;
+    text-align: center;
+    
+}
+
+#calculations {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+#displayBox{
+    width: 150px;
+    margin: 5px;
+    border-radius: 4px;
+
+}
+.digitButtons{
+    width: 40px;
+    height: 40px;
+    margin: 2px 5px;
+    padding: 2px 2px;
+}
