@@ -1,0 +1,13 @@
+header {
+    width: 100%;
+   height: 100px; 
+}
+
+#hair_header {
+    width: 100%;
+    height: 400px;
+}
+#hair_body {
+    height: 1500px;
+    width: 100%;
+}
