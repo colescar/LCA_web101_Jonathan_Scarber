@@ -1,0 +1,26 @@
+body{
+    margin: 0 auto;
+    width: 850px;
+}
+
+main {
+    margin: 0 auto;
+    height: 450px;
+    background-image: url(../src/galaxy.jpg);
+    color: white;
+}
+
+section{
+    display:flex;
+    height: 324px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+article {
+    width: 270px;
+    height: 347px;
+    background-color: rgb(224, 222, 222);
+    font-family: 'Nova Flat', cursive;
+
+}
