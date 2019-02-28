@@ -11,6 +11,8 @@ header {
     background-color: red;
   }
   aside {
+    justify-content: center;
+    margin: 0;
     grid-area: aside;
     background-color: yellow;
   }
@@ -40,11 +42,11 @@ header {
         "header  header" /* stretch header across both columns at the top */
         "nav     nav"
         "aside   main" /* stack these horizontally, aside first, etc */
-        "banner  footer";
+        "aside  footer";
     }
     nav ul {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
     }
   }
 #container{
@@ -59,9 +61,9 @@ header {
 
 #calculations {
     display: grid;
-    grid-template-columns: repeat(4 , 1fr);
+    grid-template-columns: repeat(5 , 1fr);
     grid-auto-rows: minmax(10px, auto);
-    height: 95%;
+    height: 100%;
     width: 100%;
     align-items: center;
     grid-gap: 2%;
@@ -82,4 +84,42 @@ header {
 button{
   height: 30px;
   width: 50px;
+}
+
+/*Calendar*/
+#container2{
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: 1fr 1fr 3fr;
+  width: 99%;
+  margin: 0px;
+  padding: 0px;
+}
+.month{
+width: 100%;
+    display:flex;
+  justify-content: center;
+  font-size: 30px;
+  border-bottom: 2px solid black;
+}
+.weekdays {
+  
+  display:flex;
+  justify-content: space-around;
+}
+ 
+.days {
+  margin-left: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.days > p{
+  width: 14%;
+}
+
+img { 
+  width: 100%;
+  height: 500px;
 }
