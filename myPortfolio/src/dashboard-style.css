@@ -1,28 +1,38 @@
 header {
     grid-area: header;
-    background-color: aqua;
+    background-color:black;
+    background-image: url(img/magic_1.jpg.jpg)
   }
   main {
     grid-area: main;
-    background-color: blue;
+    background-color: black;
+    background-image: url(img/magic_1.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
   nav {
     grid-area: nav;
-    background-color: red;
+    background-color:black;
+    background-image: url(img/magic_1.jpg.jpg)
   }
   aside {
+    background-image: url(img/magic_2.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     justify-content: center;
     margin: 0;
     grid-area: aside;
-    background-color: yellow;
+    background-color: black;
+    background: 
   }
   .banner {
     grid-area: banner;
-    background-color: orange;
+    background-color:black;
   }
   footer {
     grid-area: footer;
-    background-color:magenta;
+    background-color:black;
+    background-image: url(img/magic_1.jpg.jpg)
   }
   .container {
     display: grid; /* Using the grid */
@@ -33,22 +43,9 @@ header {
       "aside"
       "banner"
       "footer";
+    
   }
-  @media (min-width: 500px) {
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 3fr; /* the first column is 1 unit (fraction), the second column is 3 units */
-      grid-template-areas: /* stack the components how you want them to appear in the columns */
-        "header  header" /* stretch header across both columns at the top */
-        "nav     nav"
-        "aside   main" /* stack these horizontally, aside first, etc */
-        "aside  footer";
-    }
-    nav ul {
-      display: flex;
-      justify-content: space-around;
-    }
-  }
+  
 #container{
     width: 100%;
     height:100%;
@@ -58,34 +55,6 @@ header {
     display: grid;
     
 }
-
-#calculations {
-    display: grid;
-    grid-template-columns: repeat(5 , 1fr);
-    grid-auto-rows: minmax(10px, auto);
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    grid-gap: 2%;
-    margin: auto;
-}
-#displayBox{
-    width: 150px;
-    margin: 5px;
-    border-radius: 4px;
-
-}
-.digitButtons{
-    width: 40px;
-    height: 40px;
-    margin: 2px 5px;
-    padding: 2px 2px;
-}
-button{
-  height: 30px;
-  width: 50px;
-}
-
 /*Calendar*/
 #container2{
   border: 2px solid black;
@@ -96,6 +65,7 @@ button{
   padding: 0px;
 }
 .month{
+  color:white;
 width: 100%;
     display:flex;
   justify-content: center;
@@ -103,13 +73,15 @@ width: 100%;
   border-bottom: 2px solid black;
 }
 .weekdays {
-  
+  color:white;
   display:flex;
   justify-content: space-around;
+  margin-right: 70px
 }
  
 .days {
-  margin-left: 15px;
+  color:white;
+  margin-left: 200px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -118,11 +90,40 @@ width: 100%;
 .days > p{
   width: 14%;
 }
-
-.img { 
-  width: 100%;
-  height: 500px;
+h1 { text-align: center;
 }
-.img2 {
-  height: 200px;
+
+.world {
+  color: palevioletred;
+  font-size: 70px;
+}
+.world2 {
+  text-align: center;
+  color: palevioletred;
+  font-size: 40px;
+}
+.paragraph {
+  color: white;
+  text-align: center;
+  text align-self: auto;
+}
+.mt {
+}
+@media (max-width: 576px) {
+  nav > a {
+    font-size: 8px;
+  }
+  #profile-pic {
+    width: 75%;
+  }
+  h1 {
+    font-size: .5em;
+    align-self: flex-end;
+  }
+  h2 {
+    font-size: .4em;
+    align-self: flex-start;
+    margin-top: -3%;
+  }
+  .days: {margin-block-start: : .days
 }
