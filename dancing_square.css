@@ -1,0 +1,88 @@
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    margin-left: 50%;
+}
+    
+.square2 {
+    height: 50px;
+    width: 50px;
+    background-color:green;
+    margin-left:50%;
+}
+
+.square3 {
+    margin-left: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+}
+
+.square4 {
+    height: 50px;
+    width: 50px;
+    background-color: sienna;
+    margin-left: 50%;
+
+}
+.square5 {
+    height: 50px;
+    width: 50px;
+    background-color: violet;
+    margin-left: 50%;
+
+}
+.square6 { 
+    height: 50px;
+    width: 50px;
+    background-color: gold;
+    margin-left: 50%;
+
+}
+.square7 {
+    height: 50px;
+    width: 50px;
+    background-color: silver;
+    margin-left: 50%;
+}
+.square8 {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    margin-left: 50%;
+}
+.square9 {
+    height: 50px;
+    width: 50px;
+    background-color: cyan;
+    margin-left: 50%;
+
+}
+.square10 {
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+    margin-left: 50%;
+
+}
+.square11{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    margin-left: 50%;
+}
+.square12 {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    margin-left: 50%;
+}
+#container:hover {
+    transform: rotate(350px);
+    transition-property: all;
+    transition: all 3s ease-in-out;
+    
+    }
+    
+}
