@@ -1,88 +1,98 @@
-.square {
+#black{
     height: 50px;
     width: 50px;
     background-color: black;
     margin-left: 50%;
 }
+
+#green {
+    height: 50px;
+    width: 50px;
+    background-color:green;
+    margin-left:50%;
+
+}
     
-.square2 {
+#brown {
+    height: 50px;
+    width: 50px;
+    background-color:brown;
+    margin-left:50%;
+}
+
+#sienna {
+    height: 50px;
+    width: 50px;
+    background-color:sienna;
+    margin-left:50%;
+}
+
+#violet {
+    height: 50px;
+    width: 50px;
+    background-color:violet;
+    margin-left:50%;
+}
+#gold {
+    height: 50px;
+    width: 50px;
+    background-color:gold;
+    margin-left:50%;
+}
+#silver{
+height: 50px;
+    width: 50px;
+    background-color:silver;
+    margin-left:50%;
+}
+#orange {
+    height: 50px;
+    width: 50px;
+    background-color:orange;
+    margin-left:50%;
+}
+#cyan {
+    height: 50px;
+    width: 50px;
+    background-color:cyan;
+    margin-left:50%;
+}
+#pink {
+    height: 50px;
+    width: 50px;
+    background-color:pink;
+    margin-left:50%;
+}
+#yellow{
     height: 50px;
     width: 50px;
     background-color:green;
     margin-left:50%;
 }
+#red {height: 50px;
+    width: 50px;
+    background-color:red;
+    margin-left:50%;}
 
-.square3 {
-    margin-left: 50%;
-    height: 50px;
-    width: 50px;
-    background-color: brown;
-}
-
-.square4 {
-    height: 50px;
-    width: 50px;
-    background-color: sienna;
-    margin-left: 50%;
-
-}
-.square5 {
-    height: 50px;
-    width: 50px;
-    background-color: violet;
-    margin-left: 50%;
-
-}
-.square6 { 
-    height: 50px;
-    width: 50px;
-    background-color: gold;
-    margin-left: 50%;
-
-}
-.square7 {
-    height: 50px;
-    width: 50px;
-    background-color: silver;
-    margin-left: 50%;
-}
-.square8 {
-    height: 50px;
-    width: 50px;
-    background-color: orange;
-    margin-left: 50%;
-}
-.square9 {
-    height: 50px;
-    width: 50px;
-    background-color: cyan;
-    margin-left: 50%;
-
-}
-.square10 {
-    height: 50px;
-    width: 50px;
-    background-color: pink;
-    margin-left: 50%;
-
-}
-.square11{
-    height: 50px;
-    width: 50px;
-    background-color: yellow;
-    margin-left: 50%;
-}
-.square12 {
-    height: 50px;
-    width: 50px;
-    background-color: red;
-    margin-left: 50%;
-}
-#container:hover {
-    transform: rotate(350px);
-    transition-property: all;
-    transition: all 3s ease-in-out;
     
-    }
-    
-}
+
+
+#container {-webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out; }
+#container:hover{ -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+
+}    
+/** wrote on the board 
+.even 
+width 50px
+height 50px
+transition : all 4s ease; 
+
+# container:hover.even
+#container:hover.odd 
+
+translateX(calc(50vw-100px))
+margin-left: calc(50% + 25px);
+
+**/ 
