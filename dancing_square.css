@@ -74,25 +74,25 @@ height: 50px;
     background-color:red;
     margin-left:50%;}
 
+
+.even{ 
+        transition: all 4s ease;
+    }
     
+.odd {
+        transition: all 4s ease;
+    }
+    
+#container:hover.even{
+        -webkit-transform: scale(2) translateX(calc(50vw - 25px)) rotate(360deg);
+        transform: scale(2) translateX(calc(50vw - 25px)) rotate(360deg);
+        }
+        
+#container:hover.odd{
+        -webkit-transform: scale(2) translateX(calc(-50vw + 25px)) rotate(360deg);
+        transform: scale(2) translateX(calc(-50vw + 25px)) rotate(360deg);
+        }
 
 
-#container {-webkit-transition: -webkit-transform .8s ease-in-out;
-    transition:         transform .8s ease-in-out; }
-#container:hover{ -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
 
-}    
-/** wrote on the board 
-.even 
-width 50px
-height 50px
-transition : all 4s ease; 
 
-# container:hover.even
-#container:hover.odd 
-
-translateX(calc(50vw-100px))
-margin-left: calc(50% + 25px);
-
-**/ 
