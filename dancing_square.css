@@ -4,7 +4,7 @@
     }
     
 #container:hover .odd{
-    -webkit-transform: scale(2) translateX(calc(-50vw + 25px)) rotate(360deg);
+    -webkit-transform: scale(0.5) translateX(calc(-50vw + 25px)) rotate(360deg);
     transform: scale(2) translateX(calc(-50vw + 25px)) rotate(360deg);
     }
 
