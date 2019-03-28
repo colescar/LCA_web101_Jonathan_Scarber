@@ -1,0 +1,43 @@
+*{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+
+#game-board {
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    max-width: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: calc(50vw -150px);
+    display: grid;
+    
+}
+
+.place-block {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+
+}
+#commands{
+    margin-top: 50px;
+    width: 300px;
+    height: 150px;
+    max-height: 150px;
+    max-width: 300px;
+    text-align: center;
+    margin-left: calc(50vw -150px)
+
+}
+button{
+    border-radius: 15px;
+    width: 100px;
+    height: 50px;
+
+}
